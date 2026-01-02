@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        p {
+            width: 100px;
+            height: 50px;
+            border: 1px solid black;
+            background: yellow;
+            transitio-webkit-transition: width 5s, height 5s, border 5s, transform 5s;
+            -webkit-transition: width 5s, height 5s, border 5s, -webkit-transform 5s;
+        }
+
+
+        p:hover {
+            width: 200px;
+            height: 100px;
+            border: 10px solid red;
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            /*transform: rotate(180deg);
+            transform:rotateX(45deg);
+            transform:rotateY(45deg);
+            transform:rotateZ(450deg);
+            transform-origin : 0 100%;
+            transform: transate(45px);
+            transform: translateX(45px);
+            transform: translateY(45px);
+            transform: skew(45deg);
+            transform: skew(45deg, 45deg);
+            transform: skewX(45deg);
+            transform: skewY(45deg);
+
+            sclaeX,tan(skewY), tan(skewX),
+            transform :matrix(2,0,0,1,0,0);
+            */
+            
+        }
+    </style>
+</head>
+<body>
+    <p>마우스를 올려보세요.</p>
+</body>
+</html>

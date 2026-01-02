@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user-select</title>
+    <style>
+        .unselectable {
+            user-select: none;
+        }
+
+        .selectable {
+            user-select: all;
+        }
+    </style>
+</head>
+<body>
+    <p>You should be able to select this text.</p>
+    <p class="unselectable">Hey, you can't select this text!</p>
+    <p class="selectable">Clicking once will select all of this text.</p>   
+</body>
+</html>

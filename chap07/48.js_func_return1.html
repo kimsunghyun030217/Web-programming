@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function divide() 
+            {
+                let a = parseFloat(document.getElementById("x").value);
+                let b = parseFloat(document.getElementById("y").value);
+                
+                var divR = (a, b) => {
+
+                    let result;
+                    console.log(a);
+                    console.log(b);
+                    if (b == 0) {
+                        return;
+                    }
+                    result = a / b;
+                    console.log(result);
+                    return result;                    
+                }
+                document.getElementById("division").value = divR(a,b);
+            }
+            console.log(2*5); // 실행? 이유는?
+        </script>
+    </head>
+    <body>
+        <form name="myform" action="..." method="POST">
+            첫번째 정수: <input id="x" /><br />
+            두번째 정수: <input id="y" /><br />
+            나누기 결과: <input id="division" /><br />
+            <input type="button" value="계산" onclick="divide();" />
+        </form>
+    </body>
+</html>                                                                                    

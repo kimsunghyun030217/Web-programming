@@ -1,0 +1,67 @@
+<!-- 
+    1. 현재 소스 기준으로 30~37행 사이만 수정 가능하고, 다른 소스는 변경없이 사용해야 함.
+    2. 이 파일에서 수정이 허락된 30~37행 사이의 코드를 수정하고, 주어진 외부 스타일 파일(style.css)에 코드를 작성해서 문제에서 주어진 웹페이지와 같은 페에지를 구현하시오.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Problem #4</title>
+</head>
+<style>
+   h1{
+        margin : 40px 0px;
+        padding : 10px 20px;
+        margin-color:blue;
+        padding-color:white;
+    }
+
+    footer{ text-align :center;  color:black;
+    
+    h1{     text-align: center;  color:black;}
+    h2{     text-align: center;  color:black;}
+    ul{
+        display flex;
+        
+    }
+</style>
+<body>
+    <div id="wrapper">
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title">웹프로그래밍 수업 홈페이지</h1>
+                <h2 class="master-description">사물인터넷학과</h2>
+            </hgroup>
+        </header>
+        
+        <div class="search-bar">
+            <form>
+                <input type="text" class="input-search">
+                <input type="submit" class="input-search-submit" value="검색">
+            </form>
+        </div>
+
+
+        <nav id="main-navigation">
+            <ul class="outer-menu">
+                <!-- 힌트 : iframe에 파일이 나타나게 하려면 여기서부터 수정해야 함. 그 외의 다른 부분은 수정할 필요 없슴 -->
+                <li class="outer-menu-item">HTML5</a>
+                </li>
+                <li class="outer-menu-item">CSS3</a>
+                </li>
+                <li class="outer-menu-item">Javascript</a>
+                </li>
+                <!-- 힌트 : iframe에 파일이 나타나게 하려면 여기까지 수정해야 함 -->
+            </ul>
+        </nav>
+
+        <div id="iframe">
+            <iframe name="iframe1" width="800px" height="200px" >iframe</iframe>
+        </div>
+
+        <footer id="main-footer">
+            <p>Copyright (c) 2023 순천향대학교 미디어랩스 사물인터넷학과 전창완</p>
+        </footer>
+    </div>
+</body>
+</html>

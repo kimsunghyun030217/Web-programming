@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+    body {
+        position: relative;
+    }
+    </style>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="0">
+    <nav id="navbar-scrollspy" class="navbar text-bg-info px-3 mb-3 fixed-top">
+      <a class="navbar-brand" href="#">SCH IoT</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspy1">HTML5</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspy2">CSS3</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">More</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#scrollspy3">JavaScript</a></li>
+            <li><a class="dropdown-item" href="#scrollspy4">Bootstrap</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#scrollspy5">SASS</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2">
+      <h4 class="mt-5" id="scrollspy1">1. HTML5</h4>
+      <p><strong>HTML5는 HTML의 완전한 5번째 버전으로 월드 와이드 웹 (World Wide Web)의 핵심 마크업 언어이다.</strong> 2004년 7월 Web Hypertext Application Technology Working Group(WHATWG)에서 웹 애플리케이션 1.0이라는 이름으로 세부 명세 작업을 시작하였다.
+        HTML5는 HTML 4.01, XHTML 1.0, DOM 레벨 2 HTML에 대한 차기 표준 제안이다. 비디오, 오디오 등 다양한 부가기능과 최신 멀티미디어 콘텐츠를 액티브X 없이 브라우저에서 쉽게 볼 수 있게 하는 것을 목적으로 한다.
+        W3C는 2014년 10월 28일 HTML5 표준안을 확정했다고 발표했다. 이후 2016년 11월 1일 HTML5의 마이너 업데이트 버전인 HTML5.1 표준안을 확정, 2017년 12월 14일 HTML5.2 표준안을 확정했다. HTML5.3 표준안은 현재 작업 초안 단계로 진행 중이다.</p>
+      <h4 id="scrollspy2">2. CSS3</h4>
+      <p><strong>캐스케이딩 스타일 시트(영어: Cascading Style Sheet)는 마크업 언어가 실제 표시되는 방법을 기술하는 스타일 언어입니다.</strong> HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. W3C의 표준이고, 레이아웃과 스타일을 정의할 때의 자유도가 높다. 기본 파일명[2]은 style.css이다.
+        마크업 언어(ex: HTML)가 웹사이트의 몸체를 담당한다면 CSS는 옷과 액세서리처럼 꾸미는 역할을 담당한다고 할 수 있다. 즉, HTML 구조는 그대로 두고 CSS 파일만 변경해도 전혀 다른 웹사이트처럼 꾸밀 수 있다.
+        현재 개발 중인 CSS3의 경우 그림자 효과, 그라데이션, 변형 등 그래픽 편집 프로그램으로 제작한 이미지를 대체할 수 있는 기능이 추가되었다. 또한 다양한 애니메이션 기능이 추가되어 어도비 플래시를 어느 정도 대체하고 있다.</p>
+      <h4 id="scrollspy3">3. JavaScript</h4>
+      <p>JavaScript (JS)는 가벼운, 인터프리터 혹은 just-in-time 컴파일 프로그래밍 언어로, 일급 함수를 지원합니다. 썬 마이크로시스템즈(현재 오라클)에서 개발한 Java와는 별 관계가 없는 언어이다. 이름이 비슷하다고 같은 언어가 아니다. 사람들이 흔히 헷갈리는 부분 중 하나라 Java의 소유자인 오라클에서도 아니라고 강조한다.[2] 실질적인 구동 방식도 Java Virtual Machine을 이용해서 돌리는 Java와, 브라우저 내에 스크립트 엔진(인터프리터)이 존재하는 JavaScript는 완전히 다르다.</p>
+      <h4 id="scrollspy4">4. Bootstrap</h4>
+      <p> 트위터에서 시작된 오픈 소스 프론트엔드 프레임워크이다. 부트스트랩(Bootstrap)이란, 일반적으로 한 번 시작되면 알아서 진행되는 일련의 과정을 뜻한다. 원래 부트스트랩은 Boot+strap으로, 긴 부츠의 뒷부분에 달린 고리를 뜻했다. 이것에서 'pull oneself up by one's bootstraps'이라는, 불가능한 일을 해낸다는 관용어구가 생겼다. 그리고 그 의미가 변화하여, 도움받지 않고 스스로의 상황을 개선시킨다는 의미가 되었다.</p>
+      <h4 id="scrollspy5">5. SASS</h4>
+      <p>CSS의 단점을 보완하기 위해 만든 CSS 전처리기이다. 보통 CSS를 사용하다보면 단순 반복되는 부분이 많은 등, 불편함이 느껴지기 마련인데, SASS는 이 부분을 거의 완전히 해소시켜주는 스타일시트 언어다. SASS에는 Sass와 SCSS가 있다. 또한 CSS의 확장팩 같은 언어이기 때문에 CSS 파일 그 자체를 SCSS로 확장자만 바꾸어주어도 정상적으로 작동한다. 다만 SASS 자체는 개발자용 언어이기 때문에 웹브라우저가 읽을 수 없다. 따라서 중간에 컴파일러를 거쳐서 CSS로 변환하여 HTML에 연결한다.
+        비슷한 CSS 전처리기 언어로는 LESS, Stylus 등이 있다.</p>
+    </div>
+  </body>
+</html>
